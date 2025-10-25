@@ -1,16 +1,17 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 
+
 const firebaseConfig = {
-  // Paste your own keys here
-  apiKey: process.evn.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.evn.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.evn.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.evn.measurementId,
-  appId: process.evn.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.evn.REACT_APP_MEASUREMENTID
+  apiKey: "AIzaSyC2d_p4cK3hKeyRciSDUisP0RmkAqKgy1s",
+  authDomain: "nested-routes-app.firebaseapp.com",
+  projectId: "nested-routes-app",
+  storageBucket: "nested-routes-app.firebasestorage.app",
+  messagingSenderId: "141481279587",
+  appId: "1:141481279587:web:c37f501f5372fc3462f856",
+  measurementId: "G-ZX88VF3FB0"
 };
+
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
